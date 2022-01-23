@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[lutf8]{luainputenc}
+\usepackage[english, russian]{babel}
+\usepackage{geometry}
+\usepackage{amsthm}
+\usepackage{setspace}
+
+% Default fixed font does not support bold face
+
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{8} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{8}  % for normal
+
+% Custom colors
+
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0.5,0.5,1}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{comment}{rgb}{0,0.5,0.5}
+
+% Size of the paper
+
+\geometry{
+letterpaper
+}
+
+%custom code formtat
+
+%Python synthax highligh
+\lstset{
+language=Python,
+basicstyle=\ttm,
+numbers=left,
+numberstyle=\tiny,
+otherkeywords={self, True, False},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+commentstyle=\color{comment},
+frame=tb,                         % Any extra options here
+showstringspaces=false            %
+}
+
+\begin{document}
+
+\input{latex/tittlelist}
+\input{latex/objetive}
+\input{latex/introduction}
+\input{latex/CodeDynamicArray}
+\input{latex/inserctionsort}
+\input{latex/mergesort}
+\input{latex/timsort}
+\input{latex/conclution}
+\input{latex/bibliography}
+
+\end{document}
